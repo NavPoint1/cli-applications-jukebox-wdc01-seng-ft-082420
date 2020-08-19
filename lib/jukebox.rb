@@ -34,12 +34,14 @@ end
 def run(songs)
   puts "Please enter a command:"
   user_response = gets.strip
-  
-  if user_response == "exit"
-    exit_jukebox
-  elsif user_response == "help"
-    help
-  elsif
+  while user_response != "exit" {
+    if user_response == "help"
+      help
+    elsif user_response == "list"
+      list(songs)
+    end
+  }
+  exit_jukebox
 end
 
 
