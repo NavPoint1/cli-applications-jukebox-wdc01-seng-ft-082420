@@ -9,7 +9,7 @@ end
 
 def list(songs)
   songs.each_with_index { |obj, i|
-    puts "#{i}. #{obj}"
+    puts "#{i + 1}. #{obj}"
   }
 end
 
