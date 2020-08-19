@@ -8,8 +8,8 @@ def help
 end
 
 def list(songs)
-  songs.each { |i|
-    puts "#{i}. #{songs[i]}"
+  songs.each_with_index { |obj, i|
+    puts "#{i}. #{obj}"
   }
 end
 
