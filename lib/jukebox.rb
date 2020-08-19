@@ -19,12 +19,14 @@ def play(songs)
   if user_response.to_i > 0 and user_response <= songs.size + 1
     puts "Playing #{songs[user_response]}"
   elsif
-  
+    user_response == songs.find {
+      
+    }
   else
     
   end
 end
 
 def exit_jukebox
-  
+  puts "Goodbye"
 end
