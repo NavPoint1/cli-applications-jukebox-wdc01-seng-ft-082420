@@ -8,8 +8,8 @@ def help
 end
 
 def list(songs)
-  songs.size.times { 
-    
+  songs.each { |i|
+    puts "#{i}. "
   }
 end
 
