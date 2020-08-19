@@ -16,7 +16,13 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.strip
-  if user_response.to_i > 0 && 
+  if user_response.to_i > 0 and user_response <= songs.size + 1
+    puts "Playing #{songs[user_response]}"
+  elsif
+  
+  else
+    
+  end
 end
 
 def exit_jukebox
