@@ -9,7 +9,7 @@ end
 
 def list(songs)
   songs.each { |i|
-    puts "#{i}. "
+    puts "#{i}. #{songs[i]}"
   }
 end
 
