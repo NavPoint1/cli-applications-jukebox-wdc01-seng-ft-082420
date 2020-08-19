@@ -17,7 +17,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.strip
-  if user_response.to_i > 0 and user_response.to_i <= songs.size + 1
+  if user_response.to_i > 0 and user_response.to_i <= songs.size
     puts "Playing #{songs[user_response]}"
   elsif user_response == songs.find { |element|
       user_response == element
