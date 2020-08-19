@@ -8,7 +8,9 @@ def help
 end
 
 def list(songs)
-  
+  songs.size.times { 
+    
+  }
 end
 
 def play
